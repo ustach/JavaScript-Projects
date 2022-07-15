@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="utf-8">
+<title>Meditation</title>
+<link rel="stylesheet" href="one_page_website.css">
+<script src="./JS/one_page_website.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<header>
+  <h2>Meditation</h2>
+</header>
+
+<h2>What is meditation?</h2>
+<p>When we understand the key truths of meditation, and we master this art of inner stillness, then we are in control of our own happiness.
+The power to end our suffering is in our own hands, to the degree that we are able to bring ourselves into the meditation state.</p>
+
+
+<!-- NAV -->
+<div>
+<div>
+<ul>
+<a href="#home" id="link"><li>HOME</li></a>	
+<a href="#gallery"><li>GALLERY</li></a>
+<a href="#videos"><li>VIDEOS</li></a>
+<a href="#contact"><li>REGISTRATION</li></a>
+</ul>
+</div>
+</div>
+<!--END NAV -->
+
+<!--HOME -->
+<div id="home">
+<div>
+<div>
+<span>Find a comfortable spot and get ready to relax.</span>
+</div>
+</div>
+</div>
+<!--END HOME -->
+
+
+<!-- GALLERY -->
+<section>
+<div ="gallery">
+<h1>Gallery</h1>
+<div>
+
+<!--PHOTO-CONTAINER 1 -->
+<div>
+<div>
+<img src="./images/meditation_1.jpg" alt="meditation_1" onclick="openModal();currentSlide(1)" class="hover-shadow">
+<div>
+<h3>Click here</h3>
+<p>Start your journey today!</p>
+</div>
+</div>
+</div>
+<!-- END PHOTO-CONTAINER 1 -->
+
+<!--PHOTO-CONTAINER 2 -->
+<div>
+<div>
+<img src="./images/meditation_2.jpg" alt="meditation_2" onclick="openModal();currentSlide(2)" class="hover-shadow"">
+<div>
+<h3>Click here</h3>
+<p>Start your journey today!</p>
+</div>
+</div>
+</div>
+<!-- END PHOTO-CONTAINER 2 -->
+
+<!--PHOTO-CONTAINER 3 -->
+<div>
+<div>
+<img src="./images/meditation_3.jpg" alt="meditation_3" onclick="openModal();currentSlide(3)" class="hover-shadow"">
+<div>
+<h3>Click here</h3>
+<p>Start your journey today!</p>
+</div>
+</div>
+</div>
+<!-- END PHOTO-CONTAINER 3 -->
+
+</div>
+</div>
+</section>
+<!-- END GALLERY -->
+
+<!-- THE MODAL/LIGHTBOX -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="./images/meditation_1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="./images/meditation_2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="./images/meditation_3.jpg" style="width:100%">
+    </div>
+
+
+    <!-- NEXT/PREVIOUS CONTROLS -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- CAPTION TEXT -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- THUMBNAIL IMAGE CONTROLS -->
+    <div class="column">
+      <img class="demo" src="./images/meditation_1.jpg" onclick="currentSlide(1)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/meditation_2.jpg" onclick="currentSlide(2)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/meditation_3.jpg" onclick="currentSlide(3)" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- VIDEOS -->
+<iframe width="795" height="447" src="https://www.youtube.com/embed/c1Ndym-IsQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- END VIDEOS -->
+
+
+<!-- RSVP -->
+<section>
+<div id="contact">
+<div>
+<h1>Registration</h1>
+<div>
+<h2><span>Join us and learn how to reap the many benefits of developing a positive mindfulness habit.</span>
+<br />Reserve your session today!
+</h2>
+<p>
+Please provide us with your basic contact information.
+</p>
+<div>
+<form action="" method="post">
+<input class="ravp" type="text" value="First Name">
+<input class="ravp" type="text" value="Last Name">
+<input class="ravp" type="text" value="Email Address">
+<input class="ravp" type="text" value="Phone Number">
+<div class="form-spacer">
+<label class="terms">Terms and Coditions</label>
+</div>
+<div class="submit">
+<input type="submit" value="Submit">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--END RSVP -->
+
+<!-- FOOTER -->
+<div>
+www.meditation.com  &nbsp;| &nbsp; &copy; 2022
+</div>
+<!-- END FOOTER -->
+
+</body>
+</html>
